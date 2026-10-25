@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#173f35" />
+  <meta name="description" content="समुदाय, सहयोग और सेवा के लिए एक आधुनिक community portal demo." />
+  <title>सहयोग परिवार | Community Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement"><span class="pulse"></span> समुदाय की ताकत — साथ, सम्मान और सहयोग <span class="announcement-right">सेवा • समर्पण • विश्वास</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="सहयोग परिवार home">
+      <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S5 29 5 16C5 7 17 3 24 14 31 3 43 7 43 16 43 29 24 40 24 40Z" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linejoin="round"/><path d="M14 22h7l3-7 4 15 3-8h4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span><strong>सहयोग परिवार</strong><small>COMMUNITY CARE NETWORK</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" data-route="home">होम</a><a href="#about" data-route="about">हमारे बारे में</a><a href="#initiatives" data-route="initiatives">सहयोग पहल</a><a href="#rules" data-route="rules">नियमावली</a><a href="#gallery" data-route="gallery">गैलरी</a><a href="#blog" data-route="blog">लेख</a><a href="#contact" data-route="contact">संपर्क</a>
+      <div class="nav-actions"><a class="btn btn-quiet btn-small" href="#login">लॉगिन</a><a class="btn btn-primary btn-small" href="#register">सदस्य बनें <span>↗</span></a></div>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40S5 29 5 16C5 7 17 3 24 14 31 3 43 7 43 16 43 29 24 40 24 40Z" fill="none" stroke="currentColor" stroke-width="3.2"/><path d="M14 22h7l3-7 4 15 3-8h4" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></span><span><strong>सहयोग परिवार</strong><small>COMMUNITY CARE NETWORK</small></span></a><p>एक ऐसा समुदाय जहाँ जरूरत के समय लोग एक-दूसरे के साथ खड़े हों।</p></div>
+      <div><h4>महत्वपूर्ण लिंक</h4><a href="#about">हमारे बारे में</a><a href="#initiatives">सहयोग पहल</a><a href="#rules">नियमावली</a><a href="#blog">लेख और अपडेट</a></div>
+      <div><h4>सदस्य क्षेत्र</h4><a href="#register">नया पंजीकरण</a><a href="#login">सदस्य लॉगिन</a><a href="#members">सदस्य श्रेणियाँ</a><a href="#contact">सहायता / संपर्क</a></div>
+      <div><h4>संपर्क करें</h4><p>आपका संदेश हमारे लिए महत्वपूर्ण है।</p><a href="#contact">संपर्क फॉर्म खोलें ↗</a><a href="#admin-login">Admin demo login ↗</a><span class="footer-note">डेमो प्रोजेक्ट — संपर्क विवरण बाद में जोड़ें</span></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> सहयोग परिवार. सर्वाधिकार सुरक्षित।</span><span><a href="#privacy">प्राइवेसी पॉलिसी</a><a href="#terms">उपयोग की शर्तें</a></span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
